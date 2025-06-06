@@ -1,0 +1,25 @@
+{
+  "name": "alura-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachelaride42/backend-alura.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachelaride42/backend-alura/issues"
+  },
+  "homepage": "https://github.com/sachelaride42/backend-alura#readme",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
