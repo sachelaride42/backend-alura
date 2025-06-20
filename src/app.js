@@ -26,28 +26,28 @@ routes(app);
 //     res.status(200).json(listaLivros);
 // });
 
-app.get("/livros/:id", (req, res) => {
-    const index = buscaLivro(req.params.id);
-    res.status(200).json(livros[index]);
-});
+// app.get("/livros/:id", (req, res) => {
+//     const index = buscaLivro(req.params.id);
+//     res.status(200).json(livros[index]);
+// });
 
-app.put("/livros/:id", (req, res) => {
-    const index = buscaLivro(req.params.id);
-    livros[index].titulo = req.body.titulo;
-    res.status(200).json(livros);
-});
+// app.put("/livros/:id", (req, res) => {
+//     const index = buscaLivro(req.params.id);
+//     livros[index].titulo = req.body.titulo;
+//     res.status(200).json(livros);
+// });
 
-app.post("/livros", (req, res) => {
-    console.log(req.body);
-    livros.push(req.body);
-    res.status(201).send("Livro cadastrado com sucesso");
-});
+// app.post("/livros", (req, res) => {
+//     console.log(req.body);
+//     livros.push(req.body);
+//     res.status(201).send("Livro cadastrado com sucesso");
+// });
 
-app.delete("/livros/:id", (req, res) => {
-    const index = buscaLivro(req.params.id);
-    livros.splice(index, 1);
-    res.status(200).send("Livro removido com sucesso");
-});
+// app.delete("/livros/:id", (req, res) => {
+//     const index = buscaLivro(req.params.id);
+//     livros.splice(index, 1);
+//     res.status(200).send("Livro removido com sucesso");
+// });
 
 export default app;
 
